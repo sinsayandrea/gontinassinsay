@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>HEart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class=logo>
+                <img src="artwork/mylogo1.png" alt="This is my logo">
+            </div>
+            <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#aboutme">Profile</a>
+            <a href="#works">Gallery</a>
+            <a href="#materials">Art Materials</a>
+            <a href="#videos">Videos</a>
+            <a href="#buy">Shop</a>
+            <a href="#register">Register/Login</a>
+            <a href="" class="subscribe" onclick="myFunctionAlert()">Subscribe Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+            <img src="artwork/myprofile_nobg.png" alt="mylogo" class="main-image"/> 
+    </section>
+    
+    <section id="aboutme">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to our artistic journey! Andrea Mae Sinsay and Edmar Gontiñas are both passionate 
+                    Filipino artist driven by a deep love for capturing the beauty of our culture and nature through our art. 
+                    Growing up in Cavite, We have always been inspired by the vibrant colors of our landscapes, the rich tapestry 
+                    of our traditions, and the resilience of our people.
+                </p>
+                <p>Our artistic style is a blend of modern interpretations infused with Filipino motifs and symbolism. 
+                    Through our paintings, I strive to evoke emotions, tell stories, and celebrate the essence of Filipino identity. 
+                    Each brushstroke is a reflection of our heritage and a homage to the diversity that defines us.</p>
+            </div>
+            <div class="about-image">
+                <img src="artwork/aboutme-profile.png" alt="About Me Image">
+            </div>
+    </section>
+    
+    <section id="works">
+        <div class="page_title">
+            <h2 class="myworks-title">My Works</h2>
+        </div>
+        
+        <div class="gallery">
+            <div class="image-container" onclick="">
+                <img src="artwork/artwork-one.png" alt="Image 1" data-description="Artwork One">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-two.png" alt="Image 2" data-description="Artwork Two">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-three.png" alt="Image 2" data-description="Artwork Three">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-four.png" alt="Image 2" data-description="Artwork Four">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-five.png" alt="Image 2" data-description="Artwork Five">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-six.png" alt="Image 2" data-description="Artwork Six">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-seven.png" alt="Image 2" data-description="Artwork Seven">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-eight.png" alt="Image 2" data-description="Artwork Eight">
+            </div>
+            <div class="image-container">
+                <img src="artwork/artwork-nine.png" alt="Image 2" data-description="Artwork Nine">
+            </div>
+            <!-- Add more image-container divs as needed -->
+        </div>
+    
+        <div class="modal" id="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    
+    </section>
+
+    <section id="materials">
+        <div class="page_title">
+            <h2 class="myworks-title">Art Materials Used</h2>
+        </div>
+        <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item">
+                <img src="artwork/prisma.png">
+                <div class="content">
+                    <p>Art Materials</p>
+                    <h2>Prismacolor Premier Dual-Ended Art Markers</h2>
+                    <p>
+                        have a have a precision point on one end for crisp details and a 
+                        sturdy chisel tip on the other for full coverage and multiple line widths. 
+                        The rich ink in 10 vivid shades has unrivaled color consistency is alcohol-based, 
+                        acid-free, lightfast and resists fading.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/micron.png">
+                <div class="content">
+                    <p>Art Materials</p>
+                    <h2>Sakura Pigma Micron</h2>
+                    <p>
+                        The Sakura Pigma Micron Pens are suitable for hand lettering, bullet journaling and 
+                        all types of drawing including illustration, graphic design, technical design and drafting
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/sketchbook.jpg">
+                <div class="content">   
+                    <p>Art Materials</p>
+                    <h2>Sketchbook</h2>
+                    <p>
+                        A book of drawing paper for making sketches
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/gellyroll.png">
+                <div class="content">
+                    <p>Art Materials</p>
+                    <h2>Gelly Roll® Gel White Pens</h2>
+                    <p>
+                        Silky smooth and ultra fine, this brilliant white Gelly Roll pen, from master pen manufacturers 
+                        Sakura, are just perfect for adding highlights or accents to artwork.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/marker.png">
+                <div class="content">
+                    <p>Art Materials</p>
+                    <h2>Marker</h2>
+                    <p>
+                        Endless creativity in your hands. Tools for any <br>surface or any task, that you can depend on.<br> 
+                        PILOT Pen Pintor Markers in multiple colours <br> for easter art.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="artwork/prisma-profile.png">
+                <div class="content">
+                    Artstyle-color
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/micron-profile.png">
+                <div class="content">
+                    Outline
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/sketchbook-profile.png">
+                <div class="content">
+                    Sketchbook
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/gellyroll-profile.png">
+                <div class="content">
+                    Highlight
+                </div>
+            </div>
+            <div class="item">
+                <img src="artwork/marker-profile.png">
+                <div class="content">
+                    Marker
+                </div>
+            </div>
+        </div>
+    </div>
+          
+    </section>
+
+    <section id="videos">
+        <div class="page_title">
+            <h2 class="myworks-title">Videos</h2>
+        </div>
+        <div class="container-videos">
+            <div class="video-player">
+                <h2>-- Video Player --</h2>
+                <video id="video" controls>
+                    <source id="video-source" src="" type="video/mp4">
+                </video>
+                <div class="video-controls">
+                    <button id="prev-btn"><</button>
+                    <button id="next-btn">></button>
+                </div>
+            </div>
+            <div class="video-list">
+                <h2>- - - Video Playlist - - -</h2>
+                <div class="playlist-container">
+                    <ul id="playlist">
+                        <li data-video-src="artwork/video/video3.mp4">Watercolor Painting - 14 seconds</li>
+                        <li data-video-src="artwork/video/video5.mp4">Girl on a Train - 20 seconds</li>
+                        <li data-video-src="artwork/video/video4.mp4">Street Style - 14 seconds</li>
+                        <li data-video-src="artwork/video/video2.mp4">Guitarist - 19 seconds</li>
+                        <li data-video-src="artwork/video/video0.mp4">Photographer - 14 seconds</li>
+                        <li data-video-src="artwork/video/video1.mp4">Art Style - 19 seconds</li>
+                        <!-- Add more <li> elements as needed -->
+                    </ul>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section id="buy">
+        <h2 class="myworks-title">Buy My Works</h2>
+        <div class="cart-container">
+            <div id="cart">
+                <h2>My Cart</h2>
+                <div id="cart-items"></div>
+                <div id="total">Total: $0</div>
+                <button id="checkout-btn" onclick="myFunctionConfirmCheckOut()">Checkout</button>
+
+            </div>
+        </div>
+
+        <div class="container-product">
+            <div id="products">
+                <div class="product-row">
+                    <div class="product">
+                        <img src="artwork/product-five.png" alt="Artwork 3">
+                        <div class="product-info">
+                            <h3>Artwork 1</h3>
+                            <p>Colors that speeaks my soul</p>
+                            <p class="product-price">$15</p>
+                            <button onclick="addToCart('Artwork 3', 15)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="artwork/product-six.png" alt="Artwork 4">
+                        <div class="product-info">
+                            <h3>Artwork 2</h3>
+                            <p>Genuine happiness while you are doing your passion.</p>
+                            <p class="product-price">$20</p>
+                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-row">
+                    <div class="product">
+                        <img src="artwork/myprofile_nobg.png" alt="Artwork 1">
+                        <div class="product-info">
+                            <h3>Artwork 3</h3>
+                            <p>My Profile - Peace</p>
+                            <p class="product-price">$10</p>
+                            <button onclick="addToCart('Artwork 1', 10)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="artwork/fam.png" alt="Artwork 2">
+                        <div class="product-info">
+                            <h3>Artwork 4</h3>
+                            <p>Family of 4 - Open for Commission. Message Us</p>
+                            <p class="product-price">$10</p>
+                            <button onclick="addToCart('Artwork 2', 10)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <img src="artwork/product-paint.jpg" alt="Artwork 4" class="atv">
+                        <div class="product-info">
+                            <h3>Artwork 5</h3>
+                            <p>Canvas of thoughts.</p>
+                            <p class="product-price">$20</p>
+                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="artwork/product-lasagrada.jpg" alt="Artwork 4">
+                        <div class="product-info">
+                            <h3>Artwork 6</h3>
+                            <p>Sagrada Familia. Building of the Sagrada Familia began in 1882 
+                                and still continues today.</p>
+                            <p class="product-price">$20</p>
+                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="register">
+        <div class="container-register">
+            <form id="loginForm" class="form">
+              <h2>Login</h2>
+              <input type="text" id="username" placeholder="Username" required>
+              <input type="password" id="password" placeholder="Password" required>
+              <button type="submit" onclick= "myFunctionAlertNo()">Login</button>
+              <p class="message">Not registered? <a href="register.html" id="registerLink">Create an account</a></p>
+            </form>
+            
+            <form id="registerForm" class="form">
+              <h2>Register</h2>
+              <input type="text" id="regUsername" placeholder="Username" required>
+              <input type="password" id="regPassword" placeholder="Password" required>
+              <button type="submit" onclick="myFunctionConfirmCheckOut()">Register</button>
+              <p class="message">Already registered? <a href="#" id="loginLink">Login here</a></p>
+            </form>
+          </div>
+
+        
+        <br>
+        <br>
+        <!--Feedback-->
+        <div class="feedback-container">
+            <form id="feedbackForm" class="fkform">
+                <h2>★ We Want to Hear From You ★</h2>
+                <input type="text" id="regFeedback" placeholder="Feedback">
+                <input type="text" id="regFeedback" placeholder="Suggestion">
+                <button type="submit" onclick="myFunctionAlertFeedback()">Submit</button>
+              </form>
+
+        </div>
+
+    </section>
+
+    <div class="socialIcons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul><li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#register">Feedback</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="designer">Sinsay & Gontiñas</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
