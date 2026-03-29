@@ -25,7 +25,6 @@
             <a href="#works">Gallery</a>
             <a href="#materials">Art Materials</a>
             <a href="#videos">Videos</a>
-            <a href="#buy">Shop</a>
             <a href="#register">Register/Login</a>
             <a href="" class="subscribe" onclick="myFunctionAlert()">Subscribe Now</a>
             </div>
@@ -33,13 +32,15 @@
     </header>
 
     <section id="home">
+
             <img src="artwork/myprofile_nobg.png" alt="mylogo" class="main-image"/> 
+            
     </section>
     
     <section id="aboutme">
         <div class="about-container">
                 <div class="about-text">
-                    <h2>About Us</h2>
+                    <h2>About Me</h2>
                     <p>Welcome to my artistic journey! I, Andrea Mae Sinsay, am a passionate 
                         Filipino artist driven by a deep love for capturing the beauty of our culture and nature through my art. 
                         Growing up in Cavite, I have always been inspired by the vibrant colors of our landscapes, the rich tapestry 
@@ -48,7 +49,26 @@
                     <p>My artistic style is a blend of modern interpretations infused with Filipino motifs and symbolism. 
                         Through my paintings, I strive to evoke emotions, tell stories, and celebrate the essence of Filipino identity. 
                         Each brushstroke is a reflection of my heritage and a homage to the diversity that defines us.</p>
+                    <hr style="color:black">
+                        <div class="myWebsites">
+                    <div class="website-item">
+                        <p>Instagram account where I share some of my artwork</p>
+                        <a href="https://www.instagram.com/undreammm/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div class="website-item">
+                        <p>Tiktok account where I share my artwork and to reach more people</p>
+                        <a href="https://www.tiktok.com/@undreammm" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>                        
+                    <div class="website-item">
+                        <p>Website we created for students on finding affordable dorm they can stay</p>
+                        <a href="https://www.rentopia.online/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+
+
+                    </div>
                 </div>
+                
             <div class="about-image">
                 <img src="artwork/aboutme-profile.png" alt="About Me Image">
             </div>
@@ -239,87 +259,7 @@
 
     </section>
 
-    <section id="buy">
-        <h2 class="myworks-title">Buy My Works</h2>
-        <div class="cart-container">
-            <div id="cart">
-                <h2>My Cart</h2>
-                <div id="cart-items"></div>
-                <div id="total">Total: $0</div>
-                <button id="checkout-btn" onclick="myFunctionConfirmCheckOut()">Checkout</button>
-
-            </div>
-        </div>
-
-        <div class="container-product">
-            <div id="products">
-                <div class="product-row">
-                    <div class="product">
-                        <img src="artwork/product-five.png" alt="Artwork 3">
-                        <div class="product-info">
-                            <h3>Artwork 1</h3>
-                            <p>Colors that speeaks my soul</p>
-                            <p class="product-price">$15</p>
-                            <button onclick="addToCart('Artwork 3', 15)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="artwork/product-six.png" alt="Artwork 4">
-                        <div class="product-info">
-                            <h3>Artwork 2</h3>
-                            <p>Genuine happiness while you are doing your passion.</p>
-                            <p class="product-price">$20</p>
-                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-row">
-                    <div class="product">
-                        <img src="artwork/myprofile_nobg.png" alt="Artwork 1">
-                        <div class="product-info">
-                            <h3>Artwork 3</h3>
-                            <p>My Profile - Peace</p>
-                            <p class="product-price">$10</p>
-                            <button onclick="addToCart('Artwork 1', 10)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="artwork/fam.png" alt="Artwork 2">
-                        <div class="product-info">
-                            <h3>Artwork 4</h3>
-                            <p>Family of 4 - Open for Commission. Message Us</p>
-                            <p class="product-price">$10</p>
-                            <button onclick="addToCart('Artwork 2', 10)">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-row">
-                    <div class="product">
-                        <img src="artwork/product-paint.jpg" alt="Artwork 4" class="atv">
-                        <div class="product-info">
-                            <h3>Artwork 5</h3>
-                            <p>Canvas of thoughts.</p>
-                            <p class="product-price">$20</p>
-                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="artwork/product-lasagrada.jpg" alt="Artwork 4">
-                        <div class="product-info">
-                            <h3>Artwork 6</h3>
-                            <p>Sagrada Familia. Building of the Sagrada Familia began in 1882 
-                                and still continues today.</p>
-                            <p class="product-price">$20</p>
-                            <button onclick="addToCart('Artwork 4', 20)">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-    </section>
+    
 
     <section id="register">
         <div class="container-register">
