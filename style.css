@@ -6,13 +6,20 @@
 /*navigation bar content and logo*/
 body #home {
     background-image: url(artwork/bggg.png);
+    overflow-x: hidden; 
 }
 
 body {
+    margin: 0;                  
+    padding: 0;                 
+    overflow-x: hidden;         
     background-image: url(artwork/newbg11.png);
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
+    background-size: cover;     /* make the background cover the entire viewport */
+    background-position: center;/* center the background */
+    background-attachment: fixed; /* optional: keeps background fixed while scrolling */
 }
 
 nav {
@@ -77,7 +84,7 @@ section #register {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  width: 100%;       /* image takes full width of its container */
+    width: 50%;
 }
 .myworks-title {
     padding: 20px;
@@ -786,4 +793,32 @@ footer{
 .fkform button:hover {
     background-color:#f89b4f;
 
+}
+
+
+.myWebsites {
+  display: flex;                /* row layout */
+  justify-content: space-between; /* spread items evenly */
+  gap: 20px;                     /* spacing between columns */
+  flex-wrap: wrap;               /* wrap on smaller screens */
+}
+.myWebsites :hover {
+    background-color: #16fbff;
+    border-radius: 10px;
+    transition: 0.5s;             /* wrap on smaller screens */
+}
+.website-item {
+  flex: 1 1 200px;              /* responsive columns, minimum 200px */
+  text-align: center;           /* center text and icon */
+}
+
+.website-item p {
+  margin-bottom: 10px;          /* space between text and icon */
+  font-size: 16px;
+    text-align: center;   
+}
+
+.website-item i {
+  font-size: 40px;              /* icon size */
+  color: #000;                  /* icon color */
 }
