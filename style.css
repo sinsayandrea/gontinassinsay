@@ -77,7 +77,9 @@ section #register {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+  width: 100%;       /* image takes full width of its container */
+  height: auto;      /* maintain aspect ratio */
+  max-width: none;   /* remove any max-width restrictions */
 }
 .myworks-title {
     padding: 20px;
